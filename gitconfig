@@ -1,0 +1,27 @@
+[alias]
+  co = checkout
+
+  br = branch
+  brr = for-each-ref --sort=-committerdate --format="%(refname:short)" refs/heads/
+  ci = commit
+  st = status
+  lg = log
+  lgg = log --graph --oneline --decorate --all
+  rmbr = ! git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git branch -d
+  rmbr-dev = ! git branch --merged develop | grep -v \"\\* develop\" | xargs -n 1 git branch -d
+
+
+  # git-town workflow ~ http://www.git-town.com
+  hack = town-hack
+  ship = town-ship
+  sync = town-sync
+  sync-merge = town-sync --continue
+
+[user]
+  name = Doug Wright
+  email = mrdougwright@gmail.com
+[core]
+	# editor = atom -n -w
+	pager = less -+F -+X
+[push]
+  default = simple
