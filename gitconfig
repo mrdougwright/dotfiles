@@ -7,8 +7,9 @@
   st = status
   lg = log
   lgg = log --graph --oneline --decorate --all
-  rmbr = ! git branch --merged master | grep -v \"\\* master\" | xargs -n 1 git branch -d
+  rmbr = ! git branch --merged main | grep -v \"\\* main\" | xargs -n 1 git branch -d
   rmbr-dev = ! git branch --merged develop | grep -v \"\\* develop\" | xargs -n 1 git branch -d
+  co-pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 
 
   # git-town workflow ~ http://www.git-town.com
@@ -18,10 +19,22 @@
   sync-merge = town-sync --continue
 
 [user]
-  name = Doug Wright
-  email = mrdougwright@gmail.com
+	name = Doug Wright
+	email = mrdougwright@gmail.com
 [core]
 	# editor = atom -n -w
 	pager = less -+F -+X
+	excludesfile = /Users/doug.wright/.gitignore_global
+
+# delta style stuff
+  # pager = delta
+# [delta]
+#   plus-color = "#012800"
+#   minus-color = "#340001"
+#   syntax-theme = Monokai Extended
+# [interactive]
+#   diffFilter = delta --color-only
+# END delta style stuff
+
 [push]
-  default = simple
+  default = upstream
