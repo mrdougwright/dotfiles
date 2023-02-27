@@ -15,4 +15,4 @@ Google and download the following applications and tools:
 - Caffeine
 - VS Code
 - iTerm2
-
+- ohMyZsh
