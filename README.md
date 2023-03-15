@@ -16,3 +16,26 @@ Google and download the following applications and tools:
 - VS Code
 - iTerm2
 - ohMyZsh
+
+## Helpful tools to have
+- Homebrew
+- Postgres
+- Redis
+
+## Setting up VS Code and Extensions
+- Vim extension
+  - change settings `shift + command + P`, search User Settings:<br>
+    "vim.useSystemClipboard": true
+  - check box in preferences:<br>
+  Vim: Use System Clipboard
+
+- ElixirLS: Elixir support extension
+
+After installing vim extension, run the following:
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+```
+
+## Tips & Tricks
+Run `uname -m` to determine machine hardware.
+
