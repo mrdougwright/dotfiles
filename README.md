@@ -24,10 +24,11 @@ Google and download the following applications and tools:
 
 ## Setting up VS Code and Extensions
 - Vim extension
-  - change settings `shift + command + P`, search User Settings:<br>
-    "vim.useSystemClipboard": true
-  - check box in preferences:<br>
-  Vim: Use System Clipboard
+  - Use System Clipboard
+    - change settings `shift + command + P`, search `User Settings` and check box in preferences:<br>
+      You should see `"vim.useSystemClipboard": true` in User Settings JSON.
+  - Open with `code` from CLI
+    - `shift + command + P`, search `shell command` and install to PATH.
 
 - ElixirLS: Elixir support extension
 
