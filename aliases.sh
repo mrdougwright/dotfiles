@@ -1,7 +1,7 @@
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python=python3
+# alias python=python3
 alias be="bundle exec"
 alias beprepared="bundle exec rake db:migrate db:test:prepare && bundle exec rake parallel:prepare"
 
@@ -21,7 +21,7 @@ alias ggst="git status"
 alias ggsw="git switch"
 alias ggc="git commit"
 alias ggcm="git commit -m"
-alias ggca="git commit --amend -CHEAD"
+alias ggca="git commit --amend"
 alias ggs="git stash"
 alias ggsl="git stash list"
 alias ggsp="git stash pop"
@@ -31,6 +31,7 @@ alias ggc="git checkout"
 alias ggpb="git push -u origin"
 alias ggrbc="git rebase --continue"
 alias ggrbs="git rebase --skip"
+alias ggrh="git reset HEAD~1"
 
 # git town aliases
 alias ggh="git town hack"
@@ -45,3 +46,6 @@ alias iexms="iex -S mix phx.server"
 
 # Kubernetes
 alias k="kubectl"
+
+# Brew
+alias bsl="brew services list"
