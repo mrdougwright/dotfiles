@@ -6,17 +6,12 @@
 export ZSH_DISABLE_COMPFIX=true
 export ZSH="/Users/doug.wright/.oh-my-zsh"
 
-# Udacity Deep Learning Stuff
-export CUDA_HOME=/usr/local/cuda
-export DYLD_LIBRARY_PATH="$DYLD_LIBRARY_PATH:$CUDA_HOME/lib"
-export PATH="$CUDA_HOME/bin:$PATH"
-
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="wedisagree"
 
-test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
+# test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -65,12 +60,6 @@ test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 # Elixir: shell history
 export ERL_AFLAGS="-kernel shell_history enabled"
 
-# deno movie-line; using `denon` to serve
-export PATH="/Users/doug.wright/.deno/bin:$PATH"
-
-# bin stuff; starting with Jeff's dehound
-export Path="/Users/doug.wright/.bin/:$PATH"
-
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -81,7 +70,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-eval "$(rbenv init -)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
